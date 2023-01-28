@@ -24,6 +24,12 @@
   margin-top: 1em;
   padding-top: 1.5em;
 }
+
+@mixin divider2($color: $accent3) {
+  border-top: 1px solid $color;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
 h3,
