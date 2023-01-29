@@ -165,3 +165,39 @@ section {
   text-transform: uppercase;
   color: #fff;
 }
+
+main > h2:nth-of-type(1) {
+  font-family: "Special Elite", Times, serif;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #c7a485;
+}
+
+section:nth-of-type(2) > h3, section:nth-of-type(3) > h3:nth-of-type(1) {
+  font-family: "Special Elite", Times, serif;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: #924e3c;
+  background-color: #fff;
+}
+
+section:nth-of-type(1) > h3:nth-of-type(1) {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+  color: #333;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */
