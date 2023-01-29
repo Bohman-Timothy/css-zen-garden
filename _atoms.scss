@@ -126,6 +126,7 @@ h4 {
   margin: 0.5em 0;
 }
 
+//additional atom
 h5 {
   color: $text-light;
   font-weight: 900; /* Heavy */
@@ -134,6 +135,7 @@ h5 {
   line-height: 1em;
 }
 
+//additional atom
 h6 {
   font-size: 2.25em;
   font-weight: 200; /* Thin */
@@ -154,7 +156,16 @@ a {
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
-
 a:hover {
   border-color: $accent1;
+}
+
+//addtional atom
+img {
+  width: 150 px;
+}
+
+//additional atom
+img.bullet {
+  width: 25px;
 }
