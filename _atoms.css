@@ -78,3 +78,11 @@ a {
 a:hover {
   border-color: #924e3c;
 }
+
+img {
+  width: 150 px;
+}
+
+img.bullet {
+  width: 25px;
+}
