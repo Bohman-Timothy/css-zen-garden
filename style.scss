@@ -1,0 +1,84 @@
+@use 'variables' as *; //this puts all the variables in the global namespace.
+@use 'atoms';
+//@use 'molecules';
+//@use 'organisms' as o;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: $background-color;
+  padding: 5%;
+}
+
+body {
+  font-family: $fonts-body;
+  font-size: 85%;
+  color: $text-dark;
+  background-color: $primary;
+  margin: 0;
+  padding: 1em;
+}
+
+section {
+  background-color: white;
+  padding: 1em;
+  margin: 1em;
+}
+.colors {
+  @include atoms.set-flex();
+  > h3 {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+  > figure {
+    margin: 0;
+    flex: 1 1 20%;
+  }
+}
+.swatch {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+}
+.primary {
+  background-color: $primary;
+}
+.secondary {
+  background-color: $accent2;
+}
+.accent1 {
+  background-color: $accent1;
+}
+.accent2 {
+  background-color: $accent2;
+}
+.accent3 {
+  background-color: $accent3;
+}
+.text-dark {
+  background-color: $text-dark;
+}
+.element {
+  border: 1px solid;
+  margin: 0.5em;
+  padding: 1em;
+}
+.uppercase {
+  @include atoms.uppercase;
+}
+.uppercase-light {
+  @include atoms.uppercase($text-light);
+}
+
+ul {
+  list-style-image: url('mountain-black-and-white-24px.png');
+}
+.preamble>h3 {
+  @include atoms.heading-style1;
+  @include atoms.heading-colors2;
+}
+div.zen-resources:last-of-type::after {
+  white-space: pre-wrap;
+  content: 'CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott.' '\A' 'Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).';
+}
