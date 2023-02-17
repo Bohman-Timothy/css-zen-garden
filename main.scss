@@ -70,3 +70,17 @@ section {
 .uppercase-light {
   @include atoms.uppercase($text-light);
 }
+main>h2:nth-of-type(1) {
+  @include atoms.heading-style1;
+  @include atoms.heading-colors1;
+}
+
+section:nth-of-type(2)>h3, section:nth-of-type(3)>h3:nth-of-type(1) {
+  @include atoms.heading-style1;
+  @include atoms.heading-colors2;
+}
+
+section:nth-of-type(1)>h3:nth-of-type(1) {
+  @include atoms.heading-style3;
+  @include atoms.heading-colors3;
+}

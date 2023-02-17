@@ -25,10 +25,59 @@
   padding-top: 1.5em;
 }
 
+//additional mixin
 @mixin divider2($color: $accent3) {
   border-top: 1px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
+}
+
+//additional mixin
+@mixin heading-style1 {
+  font-family: $fonts-headline;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+//additional mixin
+@mixin heading-style2 {
+  background: $accent3;
+  color: $text-light;
+  display: inline-block;
+  font-family: $fonts-headline;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+
+//additional mixin
+@mixin heading-colors1 {
+  color: $text-light;
+  background-color: $primary;
+}
+
+//additional mixin
+@mixin heading-colors2 {
+  color: $accent1;
+  background-color: $text-light;
+}
+
+@mixin heading-colors3 {
+  color: $text-dark;
+  background-color: $text-light;
+}
+
+@mixin heading-style3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
 }
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
@@ -77,6 +126,7 @@ h4 {
   margin: 0.5em 0;
 }
 
+//additional atom
 h5 {
   color: $text-light;
   font-weight: 900; /* Heavy */
@@ -85,6 +135,7 @@ h5 {
   line-height: 1em;
 }
 
+//additional atom
 h6 {
   font-size: 2.25em;
   font-weight: 200; /* Thin */
@@ -105,7 +156,16 @@ a {
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
-
 a:hover {
   border-color: $accent1;
+}
+
+//addtional atom
+img {
+  width: 150 px;
+}
+
+//additional atom
+img.bullet {
+  width: 25px;
 }
