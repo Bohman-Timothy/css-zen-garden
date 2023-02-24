@@ -87,12 +87,16 @@ img.bullet {
   width: 25px;
 }
 
+ul {
+  list-style-image: url("small_mountain_crop.png");
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  background-color: #eeefea;
+  background: linear-gradient(#a6b2b5, #2f3d4c);
   padding: 5%;
 }
 
@@ -172,10 +176,6 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-}
-
-ul {
-  list-style-image: url("mountain-black-and-white-24px.png");
 }
 
 .preamble > h3 {

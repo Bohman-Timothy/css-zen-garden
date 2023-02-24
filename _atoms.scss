@@ -25,14 +25,12 @@
   padding-top: 1.5em;
 }
 
-//additional mixin
 @mixin divider2($color: $accent3) {
   border-top: 1px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
 }
 
-//additional mixin
 @mixin heading-style1 {
   font-family: $fonts-headline;
   font-weight: 900; /* Heavy */
@@ -43,7 +41,6 @@
   padding: 0;
 }
 
-//additional mixin
 @mixin heading-style2 {
   background: $accent3;
   color: $text-light;
@@ -55,13 +52,11 @@
   text-transform: uppercase;
 }
 
-//additional mixin
 @mixin heading-colors1 {
   color: $text-light;
   background-color: $primary;
 }
 
-//additional mixin
 @mixin heading-colors2 {
   color: $accent1;
   background-color: $text-light;
@@ -126,7 +121,6 @@ h4 {
   margin: 0.5em 0;
 }
 
-//additional atom
 h5 {
   color: $text-light;
   font-weight: 900; /* Heavy */
@@ -135,7 +129,6 @@ h5 {
   line-height: 1em;
 }
 
-//additional atom
 h6 {
   font-size: 2.25em;
   font-weight: 200; /* Thin */
@@ -160,12 +153,14 @@ a:hover {
   border-color: $accent1;
 }
 
-//addtional atom
 img {
   width: 150 px;
 }
 
-//additional atom
 img.bullet {
   width: 25px;
+}
+
+ul {
+  list-style-image: url('small_mountain_crop.png');
 }
