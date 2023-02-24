@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-  background-color: $background-color;
+  background: linear-gradient($accent2, $accent3);
   padding: 5%;
 }
 
@@ -71,9 +71,6 @@ section {
   @include atoms.uppercase($text-light);
 }
 
-ul {
-  list-style-image: url('mountain-black-and-white-24px.png');
-}
 .preamble>h3 {
   @include atoms.heading-style1;
   @include atoms.heading-colors2;
