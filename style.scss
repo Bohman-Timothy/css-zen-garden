@@ -7,7 +7,10 @@
   box-sizing: border-box;
 }
 html {
-  background: linear-gradient($accent2, $accent3);
+  background: url(images/mountain_background.png), linear-gradient($accent2, $accent3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 5%;
 }
 
@@ -15,7 +18,7 @@ body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
+  //background-color: $primary;
   margin: 0;
   padding: 1em;
 }
