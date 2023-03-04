@@ -96,7 +96,10 @@ ul {
 }
 
 html {
-  background: linear-gradient(#a6b2b5, #2f3d4c);
+  background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 5%;
 }
 
@@ -104,7 +107,6 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 85%;
   color: #333;
-  background-color: #c7a485;
   margin: 0;
   padding: 1em;
 }
@@ -188,7 +190,11 @@ section {
   padding: 0;
   color: #924e3c;
   background-color: #fff;
+  padding: 0;
+  vertical-align: bottom;
 }
+
+
 
 div.zen-resources:last-of-type::after {
   white-space: pre-wrap;
