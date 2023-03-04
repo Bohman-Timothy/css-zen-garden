@@ -190,7 +190,11 @@ section {
   padding: 0;
   color: #924e3c;
   background-color: #fff;
+  padding: 0;
+  vertical-align: bottom;
 }
+
+
 
 div.zen-resources:last-of-type::after {
   white-space: pre-wrap;
