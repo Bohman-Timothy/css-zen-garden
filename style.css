@@ -92,21 +92,6 @@ ul {
   list-style-image: url("images/small_mountain_crop.png");
 }
 
-.preamble > h3 {
-  font-family: "Special Elite", Times, serif;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0;
-  padding: 0;
-  color: #924e3c;
-  background-color: rgba(255, 255, 255, 0.4);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  vertical-align: bottom;
-}
-
 .intro {
   color: black;
   background-color: rgba(255, 255, 255, 0.3);
@@ -124,8 +109,19 @@ ul {
   color: #752e1c;
 }
 .intro .preamble h3 {
+  font-family: "Special Elite", Times, serif;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: #924e3c;
   background-color: transparent;
   text-shadow: 3px 3px 5px grey, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: bottom;
 }
 
 .sidebar {
