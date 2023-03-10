@@ -3,3 +3,56 @@
 
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
+
+.intro {
+  color: black;
+  background-color: rgb(255, 255, 255, 0.65);
+  // background: linear-gradient(rgb(255, 255, 255, 0.3), rgb(255, 255, 255, 0.6));
+  width:fit-content;
+  a {
+    border-bottom: 2px solid rgb(51, 51, 51, 0.5);
+    color: $text-dark;
+    text-decoration: none;
+    font-weight: bold;
+    transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  }
+  a:hover {
+    border-color: $accent1;
+    color: $link-highlight2;
+  }
+  .preamble h3 {
+    background-color: transparent;
+    // text-shadow: 2px 2px $text-dark;
+  }
+}
+
+.sidebar {
+    background: rgba(51, 51, 51, 0.3);
+    color: $off-white;
+    padding: 1em;
+    margin-right: 1em;
+    h3 {
+      color: $off-white;
+      &.archives, &.resources {
+        margin-top: 0.5em;
+      }
+    }
+    a {
+      border-bottom: 2px solid rgb(186, 199, 202, 0.7);
+      text-decoration: none;
+      color: #bac7ca;
+      color: $off-white;
+      transition: border-color 0.4s ease-in, color 0.4s ease-in;
+      font-weight: bold;
+    }
+    a:hover {
+      border-color: $accent1;
+      color: $link-highlight1;
+    }
+  }
+
+  ul {
+    list-style-image: url('images/small_mountain_crop.png');
+    padding-top: 0;
+    margin-top: 0;
+  }
