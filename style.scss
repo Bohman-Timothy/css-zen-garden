@@ -11,7 +11,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  // padding: 5%;
   padding: 0;
 }
 
@@ -26,13 +25,6 @@ body {
 section {
   padding: 1em;
   margin: 1em;
-}
-
-.preamble>h3 {
-  @include atoms.heading-style1;
-  @include atoms.heading-colors2;
-  padding: 10px;
-  vertical-align: bottom;  
 }
 
 div.sun-container {
@@ -75,8 +67,8 @@ div.preamble::before {
   width: 140px;
   height: 140px;
   border-radius: 100%;
-  background: yellow;
-  opacity: 25%;
+  background: $link-highlight1;
+  opacity: 100%;
   transform: translateY(0px);
   animation-iteration-count: infinite;
   position: absolute;

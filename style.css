@@ -92,9 +92,24 @@ ul {
   list-style-image: url("images/small_mountain_crop.png");
 }
 
+.preamble > h3 {
+  font-family: "Special Elite", Times, serif;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: #924e3c;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: bottom;
+}
+
 .intro {
   color: black;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.3);
   width: fit-content;
 }
 .intro a {
@@ -110,6 +125,7 @@ ul {
 }
 .intro .preamble h3 {
   background-color: transparent;
+  text-shadow: 3px 3px 5px grey, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white;
 }
 
 .sidebar {
@@ -168,20 +184,6 @@ section {
   margin: 1em;
 }
 
-.preamble > h3 {
-  font-family: "Special Elite", Times, serif;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0;
-  padding: 0;
-  color: #924e3c;
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 10px;
-  vertical-align: bottom;
-}
-
 div.sun-container {
   width: 100%;
 }
@@ -221,8 +223,8 @@ div.preamble::before {
   width: 140px;
   height: 140px;
   border-radius: 100%;
-  background: yellow;
-  opacity: 25%;
+  background: #ffb62f;
+  opacity: 100%;
   transform: translateY(0px);
   animation-iteration-count: infinite;
   position: absolute;
