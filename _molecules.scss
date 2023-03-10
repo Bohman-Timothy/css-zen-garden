@@ -4,14 +4,6 @@
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 
-.preamble>h3 {
-  @include atoms.heading-style1;
-  @include atoms.heading-colors2;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  vertical-align: bottom;  
-}
-
 .intro {
   color: black;
   background-color: rgb(255, 255, 255, 0.3);
@@ -28,9 +20,11 @@
     color: $link-highlight2;
   }
   .preamble h3 {
-    background-color: transparent;
-    text-shadow: 3px 3px 5px grey, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white;
-    // text-shadow: 2px 2px $text-dark;
+    @include atoms.heading-style1;
+    @include atoms.heading-colors4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: bottom;
   }
 }
 
