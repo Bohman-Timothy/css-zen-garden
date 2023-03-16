@@ -76,6 +76,21 @@ div.preamble::before {
   }
 }
 
+
+div.preamble::before {
+  content: '';
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: $link-highlight1;
+  opacity: 100%;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin: 50px;
+  z-index: -1;
+}
+
 div.zen-resources:last-of-type::after {
   white-space: pre-wrap;
   content: 'CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott.' '\A' 'Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).';
