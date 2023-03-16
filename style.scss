@@ -27,7 +27,7 @@ section {
   margin: 1em;
 }
 
-div.sun-container {
+section.into {
   width: 100%;
 }
 
@@ -40,27 +40,42 @@ div.sun {
   margin:50px;
 }
 
+div.preamble::before {
+  content: '';
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: $link-highlight1;
+  box-shadow: 0 0 100px $link-highlight1, 0 0 50px $link-highlight1, 0 0 25px $link-highlight1;
+  opacity: 100%;
+  transform: translateY(0px);
+  animation: sunanimation 10s linear infinite;
+  position: absolute;
+  margin: 50px;
+  z-index: -1;
+}
+
 @keyframes sunanimation {
   0% {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 200px);
     opacity: 0;
   }
   25% {
-    transform: translate(350px, 0px);
     opacity: 1;
   }
   50% {
-    transform: translate(700px, -50px);
-  }
-  75% {
-    transform: translate(1050px, 0px);
+    transform: translate(700px, 0px);
     opacity: 1;
   }
+  75% {
+
+  }
   100%{
-    transform: translate(1400px, 100px);
+    transform: translate(1400px, -300px);
     opacity: 0;
   }
 }
+
 
 div.preamble::before {
   content: '';
