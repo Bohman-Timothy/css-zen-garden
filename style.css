@@ -69,14 +69,15 @@ p {
 }
 
 a {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  color: #333;
+  border-bottom: 2px solid rgba(238, 238, 238, 0.5);
+  color: #eee;
   text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.4s ease-in, color 0.4s ease-in;
 }
 
 a:hover {
   border-color: #924e3c;
+  color: #ffb62f;
 }
 
 img {
@@ -87,98 +88,27 @@ img.bullet {
   width: 25px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background-color: #eeefea;
-  padding: 5%;
-}
-
-body {
-  font-family: "Raleway", Arial, sans-serif;
-  font-size: 85%;
-  color: #333;
-  background-color: #c7a485;
-  margin: 0;
-  padding: 1em;
-}
-
-section {
-  background-color: white;
-  padding: 1em;
-  margin: 1em;
-}
-
-.colors {
-  display: flex;
-  flex-flow: row wrap;
-}
-.colors > h3 {
-  width: 100%;
-  flex: 1 0 100%;
-}
-.colors > figure {
-  margin: 0;
-  flex: 1 1 20%;
-}
-
-.swatch {
-  width: 100%;
-  height: 100px;
-  border: 1px solid;
-}
-
-.primary {
-  background-color: #c7a485;
-}
-
-.secondary {
-  background-color: #a6b2b5;
-}
-
-.accent1 {
-  background-color: #924e3c;
-}
-
-.accent2 {
-  background-color: #a6b2b5;
-}
-
-.accent3 {
-  background-color: #2f3d4c;
-}
-
-.text-dark {
-  background-color: #333;
-}
-
-.element {
-  border: 1px solid;
-  margin: 0.5em;
-  padding: 1em;
-}
-
-.uppercase {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #333;
-}
-
-.uppercase-light {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 ul {
-  list-style-image: url("mountain-black-and-white-24px.png");
+  list-style-image: url("images/small_mountain_crop.png");
 }
 
-.preamble > h3 {
+.intro {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: fit-content;
+}
+.intro a {
+  border-bottom: 2px solid rgba(51, 51, 51, 0.5);
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: border-color 0.4s ease-in, color 0.4s ease-in;
+}
+.intro a:hover {
+  border-color: #924e3c;
+  color: #752e1c;
+}
+.intro .preamble h3 {
   font-family: "Special Elite", Times, serif;
   font-weight: 900; /* Heavy */
   font-size: 6em;
@@ -187,7 +117,115 @@ ul {
   margin: 0;
   padding: 0;
   color: #924e3c;
-  background-color: #fff;
+  background-color: transparent;
+  text-shadow: 3px 3px 5px grey, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: bottom;
+}
+
+.sidebar {
+  background: rgba(51, 51, 51, 0.3);
+  color: #eee;
+  padding: 1em;
+  margin-right: 1em;
+}
+.sidebar h3 {
+  color: #eee;
+}
+.sidebar h3.archives, .sidebar h3.resources {
+  margin-top: 0.5em;
+}
+.sidebar a {
+  border-bottom: 2px solid rgba(186, 199, 202, 0.7);
+  text-decoration: none;
+  color: #bac7ca;
+  color: #eee;
+  transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  font-weight: bold;
+}
+.sidebar a:hover {
+  border-color: #924e3c;
+  color: #ffb62f;
+}
+
+ul {
+  list-style-image: url("images/small_mountain_crop.png");
+  padding-top: 0;
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 85%;
+  color: #fff;
+  margin: 0;
+  padding: 1em;
+}
+
+section {
+  padding: 1em;
+  margin: 1em;
+}
+
+div.sun-container {
+  width: 100%;
+}
+
+div.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: yellow;
+  animation: sunanimation 10s linear infinite;
+  margin: 50px;
+}
+
+@keyframes sunanimation {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(350px, 0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(700px, -50px);
+  }
+  75% {
+    transform: translate(1050px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1400px, 100px);
+    opacity: 0;
+  }
+}
+div.preamble::before {
+  content: "";
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #ffb62f;
+  opacity: 100%;
+  transform: translateY(0px);
+  animation-iteration-count: infinite;
+  position: absolute;
+  margin: 50px;
+  z-index: -1;
 }
 
 div.zen-resources:last-of-type::after {
@@ -195,6 +233,7 @@ div.zen-resources:last-of-type::after {
   content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
+<<<<<<< HEAD
 .page-wrapper {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -232,6 +271,48 @@ div.zen-resources:last-of-type::after {
 .page-wrapper .sidebar {
   grid-column: 2/3;
   grid-row: 2/3;
+=======
+@media (min-width: 1250px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10px;
+  }
+  .page-wrapper .intro {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    background-color: rgba(47, 61, 76, 0.4);
+    padding: 1em;
+    margin-left: 1em;
+    row-gap: 20px;
+  }
+  .page-wrapper .main p {
+    color: white;
+  }
+  .page-wrapper .main .explanation {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .participation {
+    grid-column: 2/4;
+  }
+  .page-wrapper .main .benefits {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .requirements {
+    grid-column: 2/4;
+  }
+  .page-wrapper .sidebar {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 1em;
+    margin-right: 1em;
+  }
+>>>>>>> main
 }
 
 /*# sourceMappingURL=style.css.map */

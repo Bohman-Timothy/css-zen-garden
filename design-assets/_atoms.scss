@@ -25,12 +25,14 @@
   padding-top: 1.5em;
 }
 
+//additional mixin
 @mixin divider2($color: $accent3) {
   border-top: 1px solid $color;
   margin-top: 1em;
   padding-top: 1.5em;
 }
 
+//additional mixin
 @mixin heading-style1 {
   font-family: $fonts-headline;
   font-weight: 900; /* Heavy */
@@ -41,6 +43,7 @@
   padding: 0;
 }
 
+//additional mixin
 @mixin heading-style2 {
   background: $accent3;
   color: $text-light;
@@ -52,25 +55,21 @@
   text-transform: uppercase;
 }
 
+//additional mixin
 @mixin heading-colors1 {
   color: $text-light;
   background-color: $primary;
 }
 
+//additional mixin
 @mixin heading-colors2 {
   color: $accent1;
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: $text-light;
 }
 
 @mixin heading-colors3 {
   color: $text-dark;
   background-color: $text-light;
-}
-
-@mixin heading-colors4 {
-  color: $accent1;
-  background-color: transparent;
-  text-shadow: 3px 3px 5px grey, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white, 0 0 2rem white;
 }
 
 @mixin heading-style3 {
@@ -150,25 +149,12 @@ p {
 }
 
 a {
-  border-bottom: 2px solid rgba(238, 238, 238, 0.5);
-  color: $off-white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: $text-dark;
   text-decoration: none;
-  transition: border-color 0.4s ease-in, color 0.4s ease-in;
+  transition: border-color 0.2s ease-in-out;
 }
-  a:hover {
+
+a:hover {
   border-color: $accent1;
-  color: $link-highlight1;
-}
-
-
-img {
-  width: 150 px;
-}
-
-img.bullet {
-  width: 25px;
-}
-
-ul {
-  list-style-image: url('images/small_mountain_crop.png');
 }
