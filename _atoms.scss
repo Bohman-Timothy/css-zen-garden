@@ -80,6 +80,15 @@
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
 }
+
+@mixin small-heading {
+  font-size: 2.2em;
+}
+
+@mixin small-heading2 {
+  font-size: 1.25em;
+  padding: .25em .5em;
+}
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
 h3,
