@@ -58,3 +58,32 @@
     padding-top: 0;
     margin-top: 0;
   }
+
+  
+@media (max-width: 1249px) {
+  .sidebar {
+    margin-right: 0;
+  }
+
+  h3, .intro .preamble h3 {
+    @include atoms.small-heading;
+  }
+
+  .intro .preamble h3 {
+    text-align: center;
+    margin-top: .6em;
+    margin-bottom: .25em;
+  }
+
+  h1, h2 {
+    @include atoms.small-heading2;
+  }
+
+  .participation h3, .benefits h3, .requirements h3 {
+    margin-top: .5em;
+  }
+  .intro header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
