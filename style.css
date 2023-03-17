@@ -233,45 +233,6 @@ div.zen-resources:last-of-type::after {
   content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
-<<<<<<< HEAD
-.page-wrapper {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 10px;
-}
-.page-wrapper .intro {
-  grid-column: 1/3;
-}
-.page-wrapper .main {
-  grid-column: 1/2;
-  grid-row: 2/4;
-  display: grid;
-  grid-template-columns: repeat(3, fit-content);
-  grid-template-rows: repeat(5, max-content);
-  background-color: #2f3d4c;
-}
-.page-wrapper .main p {
-  color: white;
-}
-.page-wrapper .main div {
-  padding: 10px;
-}
-.page-wrapper .main .explanation {
-  grid-column: 1/3;
-}
-.page-wrapper .main .participation {
-  grid-column: 2/4;
-}
-.page-wrapper .main .benefits {
-  grid-column: 1/3;
-}
-.page-wrapper .main .requirements {
-  grid-column: 2/4;
-}
-.page-wrapper .sidebar {
-  grid-column: 2/3;
-  grid-row: 2/3;
-=======
 @media (min-width: 1250px) {
   .page-wrapper {
     display: grid;
@@ -312,7 +273,6 @@ div.zen-resources:last-of-type::after {
     padding: 1em;
     margin-right: 1em;
   }
->>>>>>> main
 }
 
 /*# sourceMappingURL=style.css.map */
