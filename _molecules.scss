@@ -59,7 +59,7 @@
   }
 
   
-@media (max-width: 993px) {
+@media (max-width: $small-screen-maximum-size) {
   .sidebar {
     margin-right: 0;
   }
