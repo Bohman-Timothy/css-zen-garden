@@ -36,30 +36,6 @@ h3 {
   line-height: 1em;
 }
 
-h4 {
-  font-size: 1.5em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-}
-
-h5 {
-  color: #fff;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-}
-
-h6 {
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
-}
-
 p {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 1em;
@@ -128,7 +104,6 @@ ul {
   background: rgba(51, 51, 51, 0.3);
   color: #eee;
   padding: 1em;
-  margin-right: 1em;
 }
 .sidebar h3 {
   color: #eee;
@@ -155,7 +130,7 @@ ul {
   margin-top: 0;
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 993px) {
   .sidebar {
     margin-right: 0;
   }
@@ -213,13 +188,13 @@ div.zen-resources:last-of-type::after {
   content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 993px) {
   .main {
     margin-top: 1em;
     margin-bottom: 1em;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 994px) {
   div.preamble::before {
     content: "";
     width: 140px;
@@ -290,7 +265,9 @@ div.zen-resources:last-of-type::after {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 1em;
-    margin-right: 1em;
+  }
+  h3 {
+    font-size: 4em;
   }
 }
 
