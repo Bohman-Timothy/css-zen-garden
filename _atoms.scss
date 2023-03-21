@@ -89,6 +89,11 @@
   font-size: 1.25em;
   padding: .25em .5em;
 }
+
+@mixin medium-heading {
+  font-size: 4em;
+}
+
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
 h3,
@@ -126,30 +131,6 @@ h3 {
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
-}
-
-h4 {
-  font-size: 1.5em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-}
-
-h5 {
-  color: $text-light;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-}
-
-h6 {
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
 }
 
 p {

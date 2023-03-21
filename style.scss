@@ -37,14 +37,14 @@ div.zen-resources:last-of-type::after {
   content: 'CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott.' '\A' 'Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).';
 }
 
-@media (max-width: 1249px) {
+@media (max-width: 993px) {
   .main {
     margin-top: 1em;
     margin-bottom: 1em;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 994px) {
   div.preamble::before {
     content: '';
     width: 140px;
@@ -120,7 +120,10 @@ div.zen-resources:last-of-type::after {
       grid-column: 2/3;
       grid-row: 2/3;
       padding: 1em;
-      margin-right: 1em;
     }
+  }
+
+  h3 {
+    @include atoms.medium-heading;
   }
 }
