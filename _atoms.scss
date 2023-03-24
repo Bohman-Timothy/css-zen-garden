@@ -96,15 +96,6 @@
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
 
-h3,
-h4,
-h5,
-h6 {
-  font-family: $fonts-headline;
-  margin: 0;
-  text-transform:uppercase;
-}
-
 h1 {
   background: $accent1;
   color: $text-light;
@@ -126,6 +117,9 @@ h2 {
 }
 
 h3 {
+  font-family: $fonts-headline;
+  margin: 0;
+  text-transform:uppercase;
   color: $text-light;
   font-weight: 900; /* Heavy */
   font-size: 6em;
@@ -145,18 +139,14 @@ a {
   text-decoration: none;
   transition: border-color 0.4s ease-in, color 0.4s ease-in;
 }
-  a:hover {
+
+a:hover {
   border-color: $accent1;
   color: $link-highlight1;
 }
 
-
 img {
   width: 150 px;
-}
-
-img.bullet {
-  width: 25px;
 }
 
 ul {
