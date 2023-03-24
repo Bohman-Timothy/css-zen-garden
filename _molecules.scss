@@ -6,7 +6,6 @@
 
 .intro {
   background-color: rgb(47, 61, 76, 0.4);
-  width:fit-content;
   .preamble h3 {
     @include atoms.heading-style1;
     @include atoms.heading-colors4;
