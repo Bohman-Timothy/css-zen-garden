@@ -32,7 +32,6 @@
     background: rgba(51, 51, 51, 0.3);
     color: $off-white;
     padding: 1em;
-    margin-right: 1em;
     h3 {
       color: $off-white;
       &.archives, &.resources {
@@ -60,7 +59,7 @@
   }
 
   
-@media (max-width: 1249px) {
+@media (max-width: $small-screen-maximum-size) {
   .sidebar {
     margin-right: 0;
   }

@@ -36,30 +36,6 @@ h3 {
   line-height: 1em;
 }
 
-h4 {
-  font-size: 1.5em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  margin: 0.5em 0;
-}
-
-h5 {
-  color: #fff;
-  font-weight: 900; /* Heavy */
-  font-size: 6em;
-  letter-spacing: 1px;
-  line-height: 1em;
-}
-
-h6 {
-  font-size: 2.25em;
-  font-weight: 200; /* Thin */
-  letter-spacing: 1px;
-  line-height: 1em;
-  padding: 0.5em 0 0.25em 0;
-}
-
 p {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 1em;
@@ -128,7 +104,6 @@ ul {
   background: rgba(51, 51, 51, 0.3);
   color: #eee;
   padding: 1em;
-  margin-right: 1em;
 }
 .sidebar h3 {
   color: #eee;
@@ -155,6 +130,30 @@ ul {
   margin-top: 0;
 }
 
+@media (max-width: 993px) {
+  .sidebar {
+    margin-right: 0;
+  }
+  h3, .intro .preamble h3 {
+    font-size: 2.2em;
+  }
+  .intro .preamble h3 {
+    text-align: center;
+    margin-top: 0.6em;
+    margin-bottom: 0.25em;
+  }
+  h1, h2 {
+    font-size: 1.25em;
+    padding: 0.25em 0.5em;
+  }
+  .participation h3, .benefits h3, .requirements h3 {
+    margin-top: 0.5em;
+  }
+  .intro header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -175,57 +174,13 @@ body {
   padding: 1em;
 }
 
+.main {
+  background-color: rgba(47, 61, 76, 0.4);
+  padding: 1em;
+}
+
 section {
   padding: 1em;
-  margin: 1em;
-}
-
-div.sun-container {
-  width: 100%;
-}
-
-div.sun {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: yellow;
-  animation: sunanimation 10s linear infinite;
-  margin: 50px;
-}
-
-@keyframes sunanimation {
-  0% {
-    transform: translate(0px, 100px);
-    opacity: 0;
-  }
-  25% {
-    transform: translate(350px, 0px);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(700px, -50px);
-  }
-  75% {
-    transform: translate(1050px, 0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(1400px, 100px);
-    opacity: 0;
-  }
-}
-div.preamble::before {
-  content: "";
-  width: 140px;
-  height: 140px;
-  border-radius: 100%;
-  background: #ffb62f;
-  opacity: 100%;
-  transform: translateY(0px);
-  animation-iteration-count: infinite;
-  position: absolute;
-  margin: 50px;
-  z-index: -1;
 }
 
 div.zen-resources:last-of-type::after {
@@ -233,7 +188,44 @@ div.zen-resources:last-of-type::after {
   content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
-@media (min-width: 1250px) {
+@media (max-width: 993px) {
+  .main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 994px) {
+  div.preamble::before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: #ffb62f;
+    box-shadow: 0 0 100px #ffb62f, 0 0 50px #ffb62f, 0 0 25px #ffb62f;
+    opacity: 100%;
+    transform: translateY(0px);
+    animation: sunanimation 10s linear infinite;
+    position: absolute;
+    margin: 50px;
+    z-index: -1;
+  }
+  @keyframes sunanimation {
+    0% {
+      transform: translate(0px, 200px);
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      transform: translate(700px, 0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(1400px, -300px);
+      opacity: 0;
+    }
+  }
   .page-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -241,13 +233,15 @@ div.zen-resources:last-of-type::after {
   }
   .page-wrapper .intro {
     grid-column: 1/3;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
   }
   .page-wrapper .main {
     grid-column: 1/2;
     grid-row: 2/4;
     display: grid;
     grid-template-rows: repeat(5, max-content);
-    background-color: rgba(47, 61, 76, 0.4);
     padding: 1em;
     margin-left: 1em;
     row-gap: 20px;
@@ -271,7 +265,9 @@ div.zen-resources:last-of-type::after {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 1em;
-    margin-right: 1em;
+  }
+  h3 {
+    font-size: 4em;
   }
 }
 
