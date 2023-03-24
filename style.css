@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Special+Elite&display=swap");
 h3,
 h4,
@@ -173,7 +174,7 @@ section {
 
 div.zen-resources:last-of-type::after {
   white-space: pre-wrap;
-  content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
+  content: "• CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "• Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain)." "\a" "• Cliffside photo from a collection by Arlene Waclawek - Unsplash (https://unsplash.com/@stellarformation)";
 }
 
 @media (max-width: 993px) {
