@@ -70,7 +70,7 @@ ul {
 
 .intro {
   color: black;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
   width: fit-content;
 }
 .intro a {
@@ -101,7 +101,7 @@ ul {
 }
 
 .sidebar {
-  background: rgba(51, 51, 51, 0.3);
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
   color: #eee;
   padding: 1em;
 }
@@ -175,8 +175,10 @@ body {
 }
 
 .main {
-  background-color: rgba(47, 61, 76, 0.4);
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
 }
 
 section {
@@ -188,10 +190,60 @@ div.zen-resources:last-of-type::after {
   content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
-@media (max-width: 993px) {
-  .main {
-    margin-top: 1em;
+@media (min-width: 600px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .page-wrapper .intro {
+    grid-column: 1/3;
+    grid-row: 1/2;
     margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .page-wrapper .main {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    padding: 1em;
+    margin-left: 1em;
+    row-gap: 20px;
+  }
+  .page-wrapper .main p {
+    color: white;
+  }
+  .page-wrapper .main .explanation {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .participation {
+    grid-column: 2/4;
+  }
+  .page-wrapper .main .benefits {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .requirements {
+    grid-column: 2/4;
+  }
+  .page-wrapper .sidebar {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 1em;
+  }
+  .page-wrapper .sidebar .wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-wrapper .sidebar .design-selection, .page-wrapper .sidebar .design-archives, .page-wrapper .sidebar .zen-resources {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+  .page-wrapper .sidebar div.zen-resources:last-of-type::after {
+    white-space: pre-wrap;
   }
 }
 @media (min-width: 994px) {
