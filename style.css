@@ -69,20 +69,8 @@ ul {
 }
 
 .intro {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(47, 61, 76, 0.4);
   width: fit-content;
-}
-.intro a {
-  border-bottom: 2px solid rgba(51, 51, 51, 0.5);
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  transition: border-color 0.4s ease-in, color 0.4s ease-in;
-}
-.intro a:hover {
-  border-color: #924e3c;
-  color: #752e1c;
 }
 .intro .preamble h3 {
   font-family: "Special Elite", Times, serif;
@@ -101,7 +89,7 @@ ul {
 }
 
 .sidebar {
-  background: rgba(51, 51, 51, 0.3);
+  background: rgba(47, 61, 76, 0.4);
   color: #eee;
   padding: 1em;
 }
@@ -169,6 +157,7 @@ html {
 body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 85%;
+  max-width: 80%;
   color: #fff;
   margin: 0;
   padding: 1em;
