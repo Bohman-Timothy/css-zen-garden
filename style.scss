@@ -90,17 +90,17 @@ div.zen-resources:last-of-type::after {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        // width: 40%;
+        width: 40%;
       }
 
-      .design-selection, .design-archives, .zen-resources {
-        margin-right: 25%;
-        margin-left: 25%;
-      }
+      // .design-selection, .design-archives, .zen-resources {
+      //   margin-right: 25%;
+      //   margin-left: 25%;
+      // }
 
-      div.zen-resources:last-of-type::after {
-        white-space: pre-wrap;
-      }
+      // div.zen-resources:last-of-type::after {
+      //   white-space: pre-wrap;
+      // }
     }
   }
 }

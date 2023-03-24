@@ -237,13 +237,7 @@ div.zen-resources:last-of-type::after {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  .page-wrapper .sidebar .design-selection, .page-wrapper .sidebar .design-archives, .page-wrapper .sidebar .zen-resources {
-    margin-right: 25%;
-    margin-left: 25%;
-  }
-  .page-wrapper .sidebar div.zen-resources:last-of-type::after {
-    white-space: pre-wrap;
+    width: 40%;
   }
 }
 @media (min-width: 994px) {
