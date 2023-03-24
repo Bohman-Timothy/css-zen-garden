@@ -5,8 +5,7 @@
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 
 .intro {
-  color: black;
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(47, 61, 76, 0.4);
   width:fit-content;
   a {
     border-bottom: 2px solid rgb(51, 51, 51, 0.5);
@@ -29,7 +28,7 @@
 }
 
 .sidebar {
-    background: rgba(51, 51, 51, 0.3);
+    background: rgba(47, 61, 76, 0.4);
     color: $off-white;
     padding: 1em;
     h3 {
