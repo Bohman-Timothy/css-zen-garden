@@ -49,11 +49,14 @@ div.zen-resources:last-of-type::after {
       background: url(images/mountain_background.png), linear-gradient($accent2, $accent3);
   }
   
+  body {
+        max-width: 80%;
+  }
+  
   div.preamble::before {
     content: '';
     width: 140px;
     height: 140px;
-    max-width: 80%;
     border-radius: 100%;
     background: $link-highlight1;
     box-shadow: 0 0 100px $link-highlight1, 0 0 50px $link-highlight1, 0 0 25px $link-highlight1;
