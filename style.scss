@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html {
-  background: url(images/mountain_background.png), linear-gradient($accent2, $accent3);
+  background: linear-gradient($accent2, $accent3);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,7 +17,6 @@ html {
 body {
   font-family: $fonts-body;
   font-size: 85%;
-  max-width: 80%;
   color: $text-light;
   margin: 0;
   padding: 1em;
@@ -46,6 +45,14 @@ div.zen-resources:last-of-type::after {
 }
 
 @media (min-width: $large-screen-minimum-size) {
+  html {
+      background: url(images/mountain_background.png), linear-gradient($accent2, $accent3);
+  }
+  
+  body {
+        max-width: 80%;
+  }
+  
   div.preamble::before {
     content: '';
     width: 140px;
