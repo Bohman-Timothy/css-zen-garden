@@ -23,9 +23,12 @@ body {
 }
 
 .main {
-  background-color: rgb(47, 61, 76, 0.4);
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: linear-gradient(90deg, rgba(47, 61, 76, 1) 0%, rgba(47, 61, 76, .7) 25%, rgba(47, 61, 76, .4) 50%, rgba(47, 61, 76, .1) 75%);
 }
+
 
 section  {
   padding: 1em;
@@ -37,10 +40,68 @@ div.zen-resources:last-of-type::after {
   content: '• CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott.' '\A' '• Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).' '\A' '• Cliffside photo from a collection by Arlene Waclawek - Unsplash (https://unsplash.com/@stellarformation)';
 }
 
-@media (max-width: $small-screen-maximum-size) {
-  .main {
-    margin-top: 1em;
-    margin-bottom: 1em;
+@media (min-width: $medium-screen-minimum-size) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+    .intro {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      margin-bottom: 1em;
+      margin-top: 1em;
+      margin-left: 1em;
+    }
+
+    .main {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      display: grid;
+      grid-template-rows: repeat(5, max-content);
+
+      padding: 1em;
+      margin-left: 1em;
+      row-gap: 20px;
+      p {
+        color: white;
+      }
+      .explanation {
+        grid-column: 1/3;
+      }
+      .participation {
+        grid-column: 2/4;
+      }
+      .benefits {
+        grid-column: 1/3;
+      }
+      .requirements {
+        grid-column: 2/4;
+      }
+    }
+
+    .sidebar {
+      display: flex;
+      grid-column: 1/3;
+      grid-row: 3/4;
+      padding: 1em;
+
+      .wrapper {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+
+      // .design-selection, .design-archives, .zen-resources {
+      //   margin-right: 25%;
+      //   margin-left: 25%;
+      // }
+
+      // div.zen-resources:last-of-type::after {
+      //   white-space: pre-wrap;
+      // }
+    }
   }
 }
 
