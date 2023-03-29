@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Special+Elite&display=swap");
 h3,
 h4,
@@ -70,7 +69,20 @@ ul {
 }
 
 .intro {
-  background-color: rgba(47, 61, 76, 0.4);
+  color: black;
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
+  width: fit-content;
+}
+.intro a {
+  border-bottom: 2px solid rgba(51, 51, 51, 0.5);
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: border-color 0.4s ease-in, color 0.4s ease-in;
+}
+.intro a:hover {
+  border-color: #924e3c;
+  color: #752e1c;
 }
 .intro .preamble h3 {
   font-family: "Special Elite", Times, serif;
@@ -89,7 +101,7 @@ ul {
 }
 
 .sidebar {
-  background: rgba(47, 61, 76, 0.4);
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
   color: #eee;
   padding: 1em;
 }
@@ -157,15 +169,16 @@ html {
 body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 85%;
-  max-width: 80%;
   color: #fff;
   margin: 0;
   padding: 1em;
 }
 
 .main {
-  background-color: rgba(47, 61, 76, 0.4);
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
 }
 
 section {
@@ -174,13 +187,57 @@ section {
 
 div.zen-resources:last-of-type::after {
   white-space: pre-wrap;
-  content: "• CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "• Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain)." "\a" "• Cliffside photo from a collection by Arlene Waclawek - Unsplash (https://unsplash.com/@stellarformation)";
+  content: "CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain).";
 }
 
-@media (max-width: 993px) {
-  .main {
-    margin-top: 1em;
+@media (min-width: 600px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .page-wrapper .intro {
+    grid-column: 1/3;
+    grid-row: 1/2;
     margin-bottom: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  .page-wrapper .main {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    padding: 1em;
+    margin-left: 1em;
+    row-gap: 20px;
+  }
+  .page-wrapper .main p {
+    color: white;
+  }
+  .page-wrapper .main .explanation {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .participation {
+    grid-column: 2/4;
+  }
+  .page-wrapper .main .benefits {
+    grid-column: 1/3;
+  }
+  .page-wrapper .main .requirements {
+    grid-column: 2/4;
+  }
+  .page-wrapper .sidebar {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 1em;
+  }
+  .page-wrapper .sidebar .wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
   }
 }
 @media (min-width: 994px) {
