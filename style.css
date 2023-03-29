@@ -108,7 +108,10 @@ ul {
   margin-top: 0;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 739px) {
+  html {
+    background: linear-gradient(#a6b2b5, #2f3d4c);
+  }
   .sidebar {
     margin-right: 0;
   }
@@ -137,7 +140,7 @@ ul {
 }
 
 html {
-  background: linear-gradient(#a6b2b5, #2f3d4c);
+  background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -167,7 +170,7 @@ div.zen-resources:last-of-type::after {
   content: "• CSS Design by Timothy Bohman, Urias Miranda, and Jamie Stott." "\a" "• Mountain icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/mountain)." "\a" "• Cliffside photo from a collection by Arlene Waclawek - Unsplash (https://unsplash.com/@stellarformation)";
 }
 
-@media (min-width: 600px) {
+@media (min-width: 740px) {
   .page-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,8 +180,6 @@ div.zen-resources:last-of-type::after {
     grid-column: 1/3;
     grid-row: 1/2;
     margin-bottom: 1em;
-    margin-top: 1em;
-    margin-left: 1em;
   }
   .page-wrapper .main {
     grid-column: 1/3;
@@ -186,7 +187,6 @@ div.zen-resources:last-of-type::after {
     display: grid;
     grid-template-rows: repeat(5, max-content);
     padding: 1em;
-    margin-left: 1em;
     row-gap: 20px;
   }
   .page-wrapper .main .explanation {
@@ -216,9 +216,6 @@ div.zen-resources:last-of-type::after {
   }
 }
 @media (min-width: 994px) {
-  html {
-    background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
-  }
   body {
     max-width: 80%;
   }
@@ -245,11 +242,14 @@ div.zen-resources:last-of-type::after {
       opacity: 1;
     }
     50% {
-      transform: translate(700px, 0px);
+      transform: translate(500px, 0px);
+      opacity: 1;
+    }
+    75% {
       opacity: 1;
     }
     100% {
-      transform: translate(1400px, -300px);
+      transform: translate(1000px, -200px);
       opacity: 0;
     }
   }
@@ -289,6 +289,12 @@ div.zen-resources:last-of-type::after {
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 1em;
+  }
+  .page-wrapper .sidebar .wrapper {
+    display: block;
+    margin-left: initial;
+    margin-right: initial;
+    width: initial;
   }
   h3 {
     font-size: 4em;
