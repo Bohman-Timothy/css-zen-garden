@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Special+Elite&display=swap");
 h1 {
   background: #924e3c;
-  color: #fff;
+  color: #eee;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -12,7 +12,7 @@ h1 {
 
 h2 {
   background: #2f3d4c;
-  color: #fff;
+  color: #eee;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
@@ -24,7 +24,7 @@ h3 {
   font-family: "Special Elite", Times, serif;
   margin: 0;
   text-transform: uppercase;
-  color: #fff;
+  color: #eee;
   font-weight: 900; /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
@@ -60,15 +60,7 @@ ul {
 }
 
 .intro {
-  color: black;
   background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
-}
-.intro a {
-  border-bottom: 2px solid rgba(51, 51, 51, 0.5);
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  transition: border-color 0.4s ease-in, color 0.4s ease-in;
 }
 .intro .preamble h3 {
   font-family: "Special Elite", Times, serif;
@@ -116,7 +108,7 @@ ul {
   margin-top: 0;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 599px) {
   .sidebar {
     margin-right: 0;
   }
@@ -155,14 +147,13 @@ html {
 body {
   font-family: "Raleway", Arial, sans-serif;
   font-size: 85%;
-  color: #fff;
+  color: #eee;
   margin: 0;
   padding: 1em;
 }
 
 .main {
   padding: 1em;
-  margin-top: 1em;
   margin-bottom: 1em;
   background-image: linear-gradient(90deg, rgb(47, 61, 76) 0%, rgba(47, 61, 76, 0.7) 25%, rgba(47, 61, 76, 0.4) 50%, rgba(47, 61, 76, 0.1) 75%);
 }
@@ -198,9 +189,6 @@ div.zen-resources:last-of-type::after {
     margin-left: 1em;
     row-gap: 20px;
   }
-  .page-wrapper .main p {
-    color: white;
-  }
   .page-wrapper .main .explanation {
     grid-column: 1/3;
   }
@@ -222,8 +210,9 @@ div.zen-resources:last-of-type::after {
   .page-wrapper .sidebar .wrapper {
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+  }
+  .page-wrapper h3 {
+    font-size: 4em;
   }
 }
 @media (min-width: 994px) {
@@ -283,9 +272,6 @@ div.zen-resources:last-of-type::after {
     padding: 1em;
     margin-left: 1em;
     row-gap: 20px;
-  }
-  .page-wrapper .main p {
-    color: white;
   }
   .page-wrapper .main .explanation {
     grid-column: 1/3;
