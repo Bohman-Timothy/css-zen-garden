@@ -1,13 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Special+Elite&display=swap");
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Special Elite", Times, serif;
-  margin: 0;
-  text-transform: uppercase;
-}
 
 h1 {
   background: #924e3c;
@@ -35,6 +27,9 @@ h3 {
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
+  font-family: "Special Elite", Times, serif;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 p {
@@ -72,6 +67,7 @@ ul {
 .intro {
   background-color: rgba(47, 61, 76, 0.4);
 }
+
 .intro .preamble h3 {
   font-family: "Special Elite", Times, serif;
   font-weight: 900; /* Heavy */
@@ -93,12 +89,14 @@ ul {
   color: #eee;
   padding: 1em;
 }
+
 .sidebar h3 {
   color: #eee;
 }
 .sidebar h3.archives, .sidebar h3.resources {
   margin-top: 0.5em;
 }
+
 .sidebar a {
   border-bottom: 2px solid rgba(186, 199, 202, 0.7);
   text-decoration: none;
@@ -107,6 +105,7 @@ ul {
   transition: border-color 0.4s ease-in, color 0.4s ease-in;
   font-weight: bold;
 }
+
 .sidebar a:hover {
   border-color: #924e3c;
   color: #ffb62f;
@@ -147,7 +146,7 @@ ul {
 }
 
 html {
-  background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
+  background: linear-gradient(#a6b2b5, #2f3d4c);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -183,7 +182,16 @@ div.zen-resources:last-of-type::after {
     margin-bottom: 1em;
   }
 }
+
 @media (min-width: 994px) {
+  html {
+    background: url(images/mountain_background.png), linear-gradient(#a6b2b5, #2f3d4c);
+  }
+  
+ body {
+    max-width: 80%;
+  }
+  
   div.preamble::before {
     content: "";
     width: 140px;
