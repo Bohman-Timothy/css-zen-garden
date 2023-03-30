@@ -90,10 +90,6 @@ ul {
 .sidebar a {
   font-weight: bold;
 }
-.sidebar a:hover {
-  border-color: #924e3c;
-  color: #ffb62f;
-}
 
 @media (max-width: 739px) {
   html {
