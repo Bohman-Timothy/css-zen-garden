@@ -51,10 +51,6 @@ a:hover {
   color: #ffb62f;
 }
 
-img {
-  width: 150 px;
-}
-
 ul {
   list-style-image: url("images/small_mountain_crop_white.png");
   padding-top: 0;
