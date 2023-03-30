@@ -181,6 +181,13 @@ div.zen-resources:last-of-type::after {
       grid-column: 2/3;
       grid-row: 2/3;
       padding: 1em;
+
+      .wrapper {
+        display: block;
+        margin-left: initial;
+        margin-right: initial;
+        width: initial;
+      }
     }
   }
 

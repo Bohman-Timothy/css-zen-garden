@@ -312,6 +312,12 @@ div.zen-resources:last-of-type::after {
     grid-row: 2/3;
     padding: 1em;
   }
+  .page-wrapper .sidebar .wrapper {
+    display: block;
+    margin-left: initial;
+    margin-right: initial;
+    width: initial;
+  }
   h3 {
     font-size: 4em;
   }
