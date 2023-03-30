@@ -28,10 +28,6 @@
   a {
     font-weight: bold;
   }
-  a:hover {
-    border-color: $accent1;
-    color: $link-highlight1;
-  }
 }
 
 @media (max-width: $small-screen-maximum-size) {
