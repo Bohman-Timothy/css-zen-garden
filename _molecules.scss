@@ -17,34 +17,22 @@
 
 .sidebar {
   background-image: linear-gradient(90deg, rgba(47, 61, 76, 1) 0%, rgba(47, 61, 76, .7) 25%, rgba(47, 61, 76, .4) 50%, rgba(47, 61, 76, .1) 75%);
+  color: $off-white;
+  padding: 1em;
+  h3 {
     color: $off-white;
-    padding: 1em;
-    h3 {
-      color: $off-white;
-      &.archives, &.resources {
-        margin-top: 0.5em;
-      }
-    }
-    a {
-      border-bottom: 2px solid rgb(186, 199, 202, 0.7);
-      text-decoration: none;
-      color: #bac7ca;
-      color: $off-white;
-      transition: border-color 0.4s ease-in, color 0.4s ease-in;
-      font-weight: bold;
-    }
-    a:hover {
-      border-color: $accent1;
-      color: $link-highlight1;
+    &.archives, &.resources {
+      margin-top: 0.5em;
     }
   }
-
-  ul {
-    list-style-image: url('images/small_mountain_crop.png');
-    padding-top: 0;
-    margin-top: 0;
+  a {
+    font-weight: bold;
   }
-
+  a:hover {
+    border-color: $accent1;
+    color: $link-highlight1;
+  }
+}
 
 @media (max-width: $small-screen-maximum-size) {
   html {

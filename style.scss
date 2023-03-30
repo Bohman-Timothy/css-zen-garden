@@ -83,18 +83,7 @@ div.zen-resources:last-of-type::after {
       .wrapper {
         display: block;
         margin-left: auto;
-        // margin-right: auto;
-        // width: 40%;
       }
-
-      // .design-selection, .design-archives, .zen-resources {
-      //   margin-right: 25%;
-      //   margin-left: 25%;
-      // }
-
-      // div.zen-resources:last-of-type::after {
-      //   white-space: pre-wrap;
-      // }
     }
     h3 {
       @include atoms.medium-heading;
